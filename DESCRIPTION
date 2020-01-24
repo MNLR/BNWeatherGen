@@ -1,6 +1,6 @@
 Package: BNWeatherGen
 Depends:
-    R(>= 3.5.0),
+    R(>= 3.6.0),
     bnlearn,
     pbapply
 Imports:
@@ -10,14 +10,14 @@ Imports:
 Suggests:
     loadeR
 Type: Package
-Title: Weather Generators with Bayesian Networks.
+Title: Weather Generators with Bayesian Networks
 Version: 0.6
 Author: Mikel N. Legasa <mikel.legasa@unican.es>
 BugReports: https://github.com/MNLR/BNWeatherGen/issues
 URL: https://github.com/MNLR/BNWeatherGen
 Maintainer: Mikel Legasa <mikel.legasa@unican.es>
 Description: This package applies Discrete Bayesian Networks to the problem of generating statistically coherent weather series.
-License: MIT License + file LICENSE
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2

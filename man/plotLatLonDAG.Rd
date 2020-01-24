@@ -4,11 +4,22 @@
 \alias{plotLatLonDAG}
 \title{Plot a Graph placing nodes in euclidean coordinates \code{positions}}
 \usage{
-plotLatLonDAG(dbn, positions, no.colors = FALSE, no.labels = FALSE,
-  vertex.label.dist = 1, node.size = 4, edge.width = 0.5,
-  edge.arrow.size = 0.15, mark.edge.strength = FALSE,
-  edges.color = c("azure2", "grey", "black"), dev.new = FALSE,
-  axes = TRUE, xlab = "x", ylab = "y")
+plotLatLonDAG(
+  dbn,
+  positions,
+  no.colors = FALSE,
+  no.labels = FALSE,
+  vertex.label.dist = 1,
+  node.size = 4,
+  edge.width = 0.5,
+  edge.arrow.size = 0.15,
+  mark.edge.strength = FALSE,
+  edges.color = c("azure2", "grey", "black"),
+  dev.new = FALSE,
+  axes = TRUE,
+  xlab = "x",
+  ylab = "y"
+)
 }
 \description{
 Plot a Graph placing nodes in euclidean coordinates \code{positions}

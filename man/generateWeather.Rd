@@ -4,9 +4,17 @@
 \alias{generateWeather}
 \title{Generate multivariate weather series using a Bayesian Network Weather Generator.}
 \usage{
-generateWeather(wg, initial = NULL, n = 1, x = NULL,
-  inference.type = NULL, initial.date = NULL,
-  advance.type = "simulation", threshold.vector = 0.5, event = "1")
+generateWeather(
+  wg,
+  initial = NULL,
+  n = 1,
+  x = NULL,
+  inference.type = NULL,
+  initial.date = NULL,
+  advance.type = "simulation",
+  threshold.vector = 0.5,
+  event = "1"
+)
 }
 \arguments{
 \item{wg}{Bayesian network weather generator model, as output from \code{buildWeatherGenerator()}}

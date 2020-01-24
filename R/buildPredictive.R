@@ -44,8 +44,7 @@
 #' @param return.intermediate Add the intermediate DAGs to the output, as $intermediateDBN1 and
 #'  $intermediateDBN2 (if any) if \code{structure.learning.steps} is employed.
 #' @param compile.junction Compile the junction from BN.fit to compute probabilities. Can be set
-#'  to FALSE, in which case it can still be computed if needed at the training stage, i.e. through
-#'  \code{downscale.BN()}.
+#'  to FALSE, in which case it can still be computed if needed at the training stage.
 #' @param parallelize Set to \code{TRUE} for parallelization. Refer to the
 #'  \code{\link[parallel]{parallel}} and see \code{Details}.
 #' @param n.cores When \code{parallelize = TRUE}, number of threads to be used, will use

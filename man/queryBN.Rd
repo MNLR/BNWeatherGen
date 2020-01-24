@@ -4,8 +4,16 @@
 \alias{queryBN}
 \title{Query Bayesian Network Model.}
 \usage{
-queryBN(evidence, dbn, evidence.nodes, predictands, type = "exact",
-  which_ = "marginal", resample.size = 10000, cl = NULL)
+queryBN(
+  evidence,
+  dbn,
+  evidence.nodes,
+  predictands,
+  type = "exact",
+  which_ = "marginal",
+  resample.size = 10000,
+  cl = NULL
+)
 }
 \arguments{
 \item{evidence}{An evidence vector.}

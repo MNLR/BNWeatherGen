@@ -1,7 +1,7 @@
 #' prepareDataDinamicBN()
 #' @title Prepare Datasets for Dinamic Bayesian Network.
-#' @param data Expects output from \code{\link[downscaleR.BN]{prepare_predictors.forBN()}}.
-#' @author MN Legasa
+#' @param data Expects output from \code{preparePredictorsBN()}
+#' @author Mikel N. Legasa
 
 prepareDataDynamicBN <- function(data_, epochs){
 

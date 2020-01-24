@@ -92,7 +92,7 @@
 #' @details
 #' buildWeatherGenerator() can be used with just a stations dataset. A Grid dataset may be specified
 #' by either using parameter \code{x} or using a "pp.forBN" class object (as output from
-#' \code{prepare_predictors.forBN()}) for parameter \code{y}. If none is specified the Bayesian
+#' \code{preparePredictorsBN()}) for parameter \code{y}. If none is specified the Bayesian
 #' Network may be used as a naive weather generator.
 #'
 #' \strong{Structure Learning Algorithms}

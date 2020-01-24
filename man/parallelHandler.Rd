@@ -4,8 +4,13 @@
 \alias{parallelHandler}
 \title{Parallelization Cluster Starter}
 \usage{
-parallelHandler(type, n.cores, PSOCK.funcExports.list = list(),
-  PSOCK.varExports.list = list(), cl = NULL)
+parallelHandler(
+  type,
+  n.cores,
+  PSOCK.funcExports.list = list(),
+  PSOCK.varExports.list = list(),
+  cl = NULL
+)
 }
 \arguments{
 \item{type}{Cluster type, either FORK or PSOCK.}

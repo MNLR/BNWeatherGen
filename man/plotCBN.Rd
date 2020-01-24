@@ -4,12 +4,23 @@
 \alias{plotCBN}
 \title{Plot Bayesian Network Weather Model}
 \usage{
-plotCBN(CBN, title = NULL, dev.new = FALSE, no.labels = FALSE,
-  vertex.label.dist = 0.8, no.colors = TRUE, node.size = 3,
-  edge.width = 0.6, edge.arrow.size = 0.2, edges.color = c("azure3",
-  "grey", "azure4", "black"), mark.edge.strength = FALSE,
-  break.axis = 1, separation.ratio = 0.1, Nlabels = 4,
-  return.plot = TRUE)
+plotCBN(
+  CBN,
+  title = NULL,
+  dev.new = FALSE,
+  no.labels = FALSE,
+  vertex.label.dist = 0.8,
+  no.colors = TRUE,
+  node.size = 3,
+  edge.width = 0.6,
+  edge.arrow.size = 0.2,
+  edges.color = c("azure3", "grey", "azure4", "black"),
+  mark.edge.strength = FALSE,
+  break.axis = 1,
+  separation.ratio = 0.1,
+  Nlabels = 4,
+  return.plot = TRUE
+)
 }
 \arguments{
 \item{CBN}{Downscaling Bayesian Network, as returned 

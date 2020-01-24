@@ -4,10 +4,16 @@
 \alias{buildDescriptive}
 \title{Build a discrete Bayesian descriptive network.}
 \usage{
-buildDescriptive(y, structure.learning.algorithm = "tabu",
-  structure.learning.args.list = list(), compile.junction = TRUE,
-  param.learning.method = "bayes", parallelize = FALSE,
-  cluster.type = "FORK", n.cores = NULL)
+buildDescriptive(
+  y,
+  structure.learning.algorithm = "tabu",
+  structure.learning.args.list = list(),
+  compile.junction = TRUE,
+  param.learning.method = "bayes",
+  parallelize = FALSE,
+  cluster.type = "FORK",
+  n.cores = NULL
+)
 }
 \arguments{
 \item{y}{Stations dataset, as output by \code{loadeR::loadStationData()}}

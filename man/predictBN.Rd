@@ -4,10 +4,21 @@
 \alias{predictBN}
 \title{Downscale with Bayesian Networks}
 \usage{
-predictBN(cbn, x, y = NULL, output = "probabilities",
-  prediction.type = "exact", event = "1", threshold.vector = NULL,
-  output.attr.evidence = FALSE, cl = NULL, stop.cluster = TRUE,
-  parallelize = FALSE, n.cores = NULL, cluster.type = "FORK")
+predictBN(
+  cbn,
+  x,
+  y = NULL,
+  output = "probabilities",
+  prediction.type = "exact",
+  event = "1",
+  threshold.vector = NULL,
+  output.attr.evidence = FALSE,
+  cl = NULL,
+  stop.cluster = TRUE,
+  parallelize = FALSE,
+  n.cores = NULL,
+  cluster.type = "FORK"
+)
 }
 \arguments{
 \item{cbn}{Climatic Bayesian Network, as returned by either

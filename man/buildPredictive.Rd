@@ -4,16 +4,27 @@
 \alias{buildPredictive}
 \title{Build a predictive discrete Bayesian Network using climate data.}
 \usage{
-buildPredictive(data, structure.learning.algorithm = "tabu",
+buildPredictive(
+  data,
+  structure.learning.algorithm = "tabu",
   structure.learning.args.list = list(),
-  param.learning.method = "bayes", forbid.GG = FALSE,
-  forbid.DD = FALSE, forbid.DtoG = FALSE, force.closest.GD = NULL,
-  closest.GD.direction = NULL, forbid.GD = FALSE,
-  structure.learning.steps = 1, fix.intermediate = TRUE,
+  param.learning.method = "bayes",
+  forbid.GG = FALSE,
+  forbid.DD = FALSE,
+  forbid.DtoG = FALSE,
+  force.closest.GD = NULL,
+  closest.GD.direction = NULL,
+  forbid.GD = FALSE,
+  structure.learning.steps = 1,
+  fix.intermediate = TRUE,
   structure.learning.algorithm2 = NULL,
-  structure.learning.args.list2 = list(), return.intermediate = FALSE,
-  compile.junction = TRUE, parallelize = FALSE, n.cores = NULL,
-  cluster.type = "FORK")
+  structure.learning.args.list2 = list(),
+  return.intermediate = FALSE,
+  compile.junction = TRUE,
+  parallelize = FALSE,
+  n.cores = NULL,
+  cluster.type = "FORK"
+)
 }
 \arguments{
 \item{data}{Expects output from \code{preparePredictorsBN()}.}
@@ -74,8 +85,7 @@ step if \code{structure.learning.steps} is employed. Ignored otherwise.}
 $intermediateDBN2 (if any) if \code{structure.learning.steps} is employed.}
 
 \item{compile.junction}{Compile the junction from BN.fit to compute probabilities. Can be set
-to FALSE, in which case it can still be computed if needed at the training stage, i.e. through
-\code{downscale.BN()}.}
+to FALSE, in which case it can still be computed if needed at the training stage.}
 
 \item{parallelize}{Set to \code{TRUE} for parallelization. Refer to the
 \code{\link[parallel]{parallel}} and see \code{Details}.}

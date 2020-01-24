@@ -7,11 +7,11 @@
 prepareDataDynamicBN(data_, epochs)
 }
 \arguments{
-\item{data}{Expects output from \code{\link[downscaleR.BN]{prepare_predictors.forBN()}}.}
+\item{data}{Expects output from \code{preparePredictorsBN()}}
 }
 \description{
 prepareDataDinamicBN()
 }
 \author{
-MN Legasa
+Mikel N. Legasa
 }

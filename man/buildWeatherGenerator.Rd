@@ -4,22 +4,38 @@
 \alias{buildWeatherGenerator}
 \title{Build a Discrete Bayesian Network Weather Generator.}
 \usage{
-buildWeatherGenerator(y, x = NULL,
+buildWeatherGenerator(
+  y,
+  x = NULL,
   structure.learning.algorithm = "tabu",
   structure.learning.args.list = list(),
-  param.learning.method = "bayes", epochs = 2, force.DD = NULL,
-  forbid.GG = FALSE, forbid.DD = FALSE, forbid.DtoG = FALSE,
-  force.closest.GD = NULL, closest.GD.direction = NULL,
-  forbid.GD = FALSE, structure.learning.steps = 1,
-  fix.intermediate = TRUE, structure.learning.algorithm2 = NULL,
+  param.learning.method = "bayes",
+  epochs = 2,
+  force.DD = NULL,
+  forbid.GG = FALSE,
+  forbid.DD = FALSE,
+  forbid.DtoG = FALSE,
+  force.closest.GD = NULL,
+  closest.GD.direction = NULL,
+  forbid.GD = FALSE,
+  structure.learning.steps = 1,
+  fix.intermediate = TRUE,
+  structure.learning.algorithm2 = NULL,
   structure.learning.args.list2 = list(),
   structure.learning.algorithm3 = NULL,
-  structure.learning.args.list3 = list(), keep.dynamic.distance = TRUE,
-  remove.past.G = TRUE, forbid.backwards = FALSE,
-  forbid.past.dynamic.GD = TRUE, forbid.dynamic.GG = FALSE,
-  forbid.past.DD = FALSE, return.intermediate = FALSE,
-  compile.junction = FALSE, parallelize = FALSE, n.cores = NULL,
-  cluster.type = "FORK")
+  structure.learning.args.list3 = list(),
+  keep.dynamic.distance = TRUE,
+  remove.past.G = TRUE,
+  forbid.backwards = FALSE,
+  forbid.past.dynamic.GD = TRUE,
+  forbid.dynamic.GG = FALSE,
+  forbid.past.DD = FALSE,
+  return.intermediate = FALSE,
+  compile.junction = FALSE,
+  parallelize = FALSE,
+  n.cores = NULL,
+  cluster.type = "FORK"
+)
 }
 \arguments{
 \item{y}{Stations dataset, as output by \code{loadeR::loadStationData()} (see Details)}
@@ -149,7 +165,7 @@ Distribution of the dataset \code{y} considering the temporal order specified in
 \details{
 buildWeatherGenerator() can be used with just a stations dataset. A Grid dataset may be specified
 by either using parameter \code{x} or using a "pp.forBN" class object (as output from
-\code{prepare_predictors.forBN()}) for parameter \code{y}. If none is specified the Bayesian
+\code{preparePredictorsBN()}) for parameter \code{y}. If none is specified the Bayesian
 Network may be used as a naive weather generator.
 
 \strong{Structure Learning Algorithms}

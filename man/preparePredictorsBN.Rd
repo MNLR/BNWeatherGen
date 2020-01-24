@@ -7,14 +7,14 @@
 preparePredictorsBN(grid, rm.na = TRUE, rm.na.mode = "observations")
 }
 \arguments{
-\item{grid}{Expects output from \code{\link[downscaleR]{prepare_predictors}}.}
+\item{grid}{Expects grid from `loadeR`.}
 }
 \value{
-A processed dataset to be passed to build.downscalingBN().
+A processed dataset to be passed to \code{buildPredictive()}.
 }
 \description{
 preparePredictorsBN()
 }
 \author{
-MN Legasa
+Mikel N. Legasa
 }
