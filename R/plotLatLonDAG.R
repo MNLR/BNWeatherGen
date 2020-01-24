@@ -87,7 +87,7 @@ plotLatLonDAG <- function(dbn, positions, no.colors = FALSE, no.labels = FALSE,
                               vertex.color=COL, vertex.label=NA,  rescale=F,
                               edge.color = edge.color.pattern,
                               xlim=c(minx, maxx), ylim=c(miny, maxy),
-                              xlab = xlab, ylab = ylab, asp=FALSE, axes = FALSE,
+                              xlab = xlab, ylab = ylab, asp=FALSE, axes = axes,
                               edge.width = edge.width, 
                               edge.arrow.size = edge.arrow.size)
   } else { plot.igraph(a, layout=t(positions),
@@ -97,7 +97,7 @@ plotLatLonDAG <- function(dbn, positions, no.colors = FALSE, no.labels = FALSE,
                        rescale=F,
                        edge.color = edge.color.pattern,
                        xlim=c(minx, maxx), ylim=c(miny, maxy), 
-                       xlab = xlab, ylab = ylab, asp = FALSE , axes = FALSE,
+                       xlab = xlab, ylab = ylab, asp = FALSE , axes = axes,
                        edge.width = edge.width, edge.arrow.size = edge.arrow.size)
   }
 }
