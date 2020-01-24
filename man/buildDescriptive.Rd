@@ -8,7 +8,7 @@ buildDescriptive(
   y,
   structure.learning.algorithm = "tabu",
   structure.learning.args.list = list(),
-  compile.junction = TRUE,
+  compile.junction = FALSE,
   param.learning.method = "bayes",
   parallelize = FALSE,
   cluster.type = "FORK",
