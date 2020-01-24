@@ -6,6 +6,7 @@
 #' January and February are included (DJF season).
 #' @name ECA11.Germany.DJF
 #' @docType data
+#' @usage data(ECA11.Germany.DJF)
 #' @author Mikel N. Legasa \email{mikel.legasa@unican.es}
 #' @references The dataset is provided by the European Climate Assessment & Dataset
 #'  project (ECA&D).
@@ -20,6 +21,7 @@
 #' July and August are included (JJA season).
 #' @name ECA11.Germany.JJA
 #' @docType data
+#' @usage data(ECA11.Germany.JJA)
 #' @author Mikel N. Legasa \email{mikel.legasa@unican.es}
 #' @references The dataset is provided by the European Climate Assessment & Dataset
 #'  project (ECA&D).
@@ -35,6 +37,7 @@
 #' January and February are included (DJF season).
 #' @name ECA11_ERAINT.Germany.DJF
 #' @docType data
+#' @usage data(ECA11_ERAINT.Germany.DJF)
 #' @author Mikel N. Legasa \email{mikel.legasa@unican.es}
 #' @references The stations dataset is provided by the European Climate Assessment & Dataset
 #'  project (ECA&D). For ERA-Interim, see \url{http://doi.org/10.1002/qj.828}
@@ -50,6 +53,7 @@
 #' July and August are included (JJA season).
 #' @name ECA11_ERAINT.Germany.JJA
 #' @docType data
+#' @usage data(ECA11_ERAINT.Germany.JJA)
 #' @author Mikel N. Legasa \email{mikel.legasa@unican.es}
 #' @references The stations dataset is provided by the European Climate Assessment & Dataset
 #'  project (ECA&D). For ERA-Interim, see \url{http://doi.org/10.1002/qj.828}

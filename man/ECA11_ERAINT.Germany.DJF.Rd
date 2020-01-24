@@ -12,7 +12,7 @@ Precipitation has been discretized to 0/1 absence/presence of precipitation. Onl
 January and February are included (DJF season).}
 \format{An object of class \code{list} of length 2.}
 \usage{
-ECA11_ERAINT.Germany.DJF
+data(ECA11_ERAINT.Germany.DJF)
 }
 \description{
 Daily precipitation records used in this study range from 1979 to 2008 VALUE experimental

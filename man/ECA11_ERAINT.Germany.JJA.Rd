@@ -12,7 +12,7 @@ Precipitation has been discretized to 0/1 absence/presence of precipitation. Onl
 July and August are included (JJA season).}
 \format{An object of class \code{list} of length 2.}
 \usage{
-ECA11_ERAINT.Germany.JJA
+data(ECA11_ERAINT.Germany.JJA)
 }
 \description{
 Daily precipitation records used in this study range from 1979 to 2008 VALUE experimental
