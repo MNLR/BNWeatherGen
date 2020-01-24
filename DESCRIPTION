@@ -2,9 +2,9 @@ Package: BNWeatherGen
 Depends:
     R(>= 3.6.0),
     bnlearn,
+    gRain,
     pbapply
 Imports:
-    gRain,
     igraph,
     parallel
 Suggests:
