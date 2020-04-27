@@ -13,6 +13,7 @@ generateWeather(
   initial.date = NULL,
   advance.type = "simulation",
   threshold.vector = 0.5,
+  resample.size = 10000,
   event = "1"
 )
 }

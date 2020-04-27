@@ -1,4 +1,4 @@
-simulate1 <- function(BN.fit, junction, evidence.nodes, evidence) {
+simulate1 <- function(BN.fit, junction, evidence.nodes, evidence, resample.size = 10000) {
 
   if (length(evidence.nodes) != length(evidence)) {stop("Provide a single evidence for each
                                                         evidence node.")}
@@ -28,7 +28,8 @@ simulate1 <- function(BN.fit, junction, evidence.nodes, evidence) {
     PT <- queryBN(evidence = evidence, dbn = dummydbn,
                   evidence.nodes = evidence.nodes,
                   predictands = predictand, 
-                  type = type, which_ = "marginal")
+                  type = type, which_ = "marginal",
+                  resample.size = resample.size)
     if (type == "exact"){
       PT <- PT[[predictand]]
     }

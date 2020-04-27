@@ -22,6 +22,7 @@ generateWeather <- function(wg, initial = NULL, n = 1, x = NULL,
                             initial.date = NULL,
                             advance.type = "simulation", 
                             threshold.vector = 0.5,
+                            resample.size = 10000,
                             event = "1"){
   # expects x in the form prepare_newdata(newdata = tx, predictor = grid)
   # n overriden when x is not NULL.
@@ -98,7 +99,7 @@ generateWeather <- function(wg, initial = NULL, n = 1, x = NULL,
                          predictands = as.vector(
                            unlist(wg$names.distribution[1:(length(wg$names.distribution)-1)]
                        )
-              )
+              ), resample.size = resample.size
       )
       initial <- toOperableVector(
         sapply(initial, function(x) {
@@ -122,7 +123,8 @@ generateWeather <- function(wg, initial = NULL, n = 1, x = NULL,
 
   tt_ <- system.time(queryBN(evidence = evidence_, dbn = wg,
                              evidence.nodes = predictors,
-                             predictands = predictands, type = advance.type
+                             predictands = predictands, type = advance.type,
+                             resample.size = resample.size
                              )
                      )[3]*n
   if (tt_ > 60){
@@ -141,7 +143,8 @@ generateWeather <- function(wg, initial = NULL, n = 1, x = NULL,
   for (epoch in 1:n){
     simulated <- queryBN(evidence = evidence_, dbn = wg,
                          evidence.nodes = predictors,
-                         predictands = predictands, type = advance.type
+                         predictands = predictands, type = advance.type,
+                         resample.size = resample.size
                         )
     if (advance.type == "exact"){
       simulated <- simplify2array( sapply(simulated, simplify2array,

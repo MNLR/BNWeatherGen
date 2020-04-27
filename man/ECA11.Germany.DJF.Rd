@@ -9,7 +9,9 @@ the VALUE spatial validation experiment (A description of the experiment and
 the data can be found in Widmann et al. (2019), \url{https://doi.org/10.1002/joc.6024}). 
 Precipitation has been discretized to 0/1 absence/presence of precipitation. Only December, 
 January and February are included (DJF season).}
-\format{An object of class \code{list} of length 5.}
+\format{
+An object of class \code{list} of length 5.
+}
 \usage{
 data(ECA11.Germany.DJF)
 }

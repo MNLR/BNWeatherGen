@@ -31,7 +31,7 @@ queryBN <- function( evidence, dbn, evidence.nodes, predictands, type = "exact",
   else if (type == "simulation"){
     sim_ <- simulate1(BN.fit = BN.fit, junction = junction,
                       evidence.nodes = evidence.nodes,
-                      evidence = evidence)
+                      evidence = evidence, resample.size = resample.size)
     order.index <- match(predictands, names(sim_))
     return( sim_[order.index] )
   }
