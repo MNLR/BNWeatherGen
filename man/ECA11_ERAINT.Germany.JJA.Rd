@@ -10,7 +10,9 @@ the data can be found in Widmann et al. (2019), \url{https://doi.org/10.1002/joc
 6 grid points taken from the ERA-Interim dataset.
 Precipitation has been discretized to 0/1 absence/presence of precipitation. Only June, 
 July and August are included (JJA season).}
-\format{An object of class \code{list} of length 2.}
+\format{
+An object of class \code{list} of length 2.
+}
 \usage{
 data(ECA11_ERAINT.Germany.JJA)
 }
