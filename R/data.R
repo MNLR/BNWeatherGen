@@ -15,8 +15,6 @@
 #' @keywords datasets
 "ECA44.Germany.JJA"
 
-
-
 #' Daily precipitation records used in this study range from 1979 to 2008 VALUE experimental
 #' period, for a subset of 11 stations in southeast Germany extracted from 
 #' the VALUE spatial validation experiment (A description of the experiment and
