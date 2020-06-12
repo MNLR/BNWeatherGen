@@ -3,7 +3,7 @@
 
 Implements Bayesian networks as discrete multivariate weather generators in [R](https://www.r-project.org). A small tutorial with several examples is provided in the [companion notebook](https://github.com/MNLR/BNWeatherGen/blob/master/2019_BNWeatherGen_WRR.ipynb).
 
-This package can be used to reproduce the Bayesian network models of the paper *Multisite Weather Generators using Bayesian Networks: An illustrative case study for precipitation occurrence*, submitted to **Water Resources Research**. It also has some experimental functionality not restricted to weather generators, like predictive networks intended for downscaling.
+This is a novel methodology in the multisite stochastic weather generation game, which we proposed and thoroughly analyzed in the article [*Multisite Weather Generators using Bayesian Networks: An illustrative case study for precipitation occurrence*](https://doi.org/10.1029/2019WR026416), published in **Water Resources Research**. It also has some experimental functionality not restricted to weather generators, like predictive networks for downscaling purposes.
 
 This package relies on [**bnlearn**](https://www.bnlearn.com), plus the packages [**gRain**](https://cran.r-project.org/web/packages/gRain/index.html) (for exact inference) and  [**iGraph**](https://igraph.org/c/) (for visualization). 
 
