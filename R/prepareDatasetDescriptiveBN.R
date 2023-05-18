@@ -1,5 +1,5 @@
 
-prepareDatasetDescriptiveBN <- function(y) {
+prepareDatasetDescriptiveBN <- function(y, discretize = FALSE) {
   idS <- as.vector(sapply(y$Metadata$station_id, function(x){return(paste0("D.",x))}))
   # prepending of "D." is compulsory due to limitations in as.grain()
   data <- as.data.frame(y$Data)
@@ -14,8 +14,10 @@ prepareDatasetDescriptiveBN <- function(y) {
   rr <- nrow(y$Data) - sum(index.NA)
   if (rr != 0){ print(paste0("Removed ", rr , " observations with NA values." ))}
 
-  for (j in 1:ncol(data)){
-    data[, j] <- as.factor(data[ , j])
+  if (discretize){
+    for (j in 1:ncol(data)){
+      data[, j] <- as.factor(data[ , j])
+    }
   }
 
   colnames(data) <- idS
