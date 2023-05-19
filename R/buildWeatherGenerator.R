@@ -175,8 +175,10 @@ buildWeatherGenerator <- function(y, x = NULL,
     print("No param.learning.method set.")
     if (class(y$Data[,1]) == "numeric"){
       print("Inferred Gaussian BN from first variable. param.learning.method has been set to mle-g")
+      param.learning.method <- "mle-g"
     } else if (class(y$Data[,1]) == "factor"){
       print("Inferred Discrete BN from first variable. param.learning.method has been set to mle")
+      param.learning.method <- "mle"
     } else {
       stop("Could not infer distribution of nodes. Did you input valid variables? (numeric or factor)")
     }
