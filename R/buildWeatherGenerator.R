@@ -149,7 +149,7 @@
 buildWeatherGenerator <- function(y, x = NULL,
                                   structure.learning.algorithm = "tabu",
                                   structure.learning.args.list = list(),
-                                  param.learning.method = "bayes",
+                                  param.learning.method = NULL,
                                   epochs = 2,
                                   force.DD = NULL,
                                   forbid.GG = FALSE, forbid.DD = FALSE, 
@@ -171,7 +171,16 @@ buildWeatherGenerator <- function(y, x = NULL,
                                   compile.junction = FALSE, 
                                   parallelize = FALSE, n.cores= NULL,
                                   cluster.type = "FORK") {
-
+  if ( is.null(param.learning.method) ){
+    print("No param.learning.method set.")
+    if (class(y$Data[,1]) == "numeric"){
+      print("Inferred Gaussian BN from first variable. param.learning.method has been set to mle-g")
+    } else if (class(y$Data[,1]) == "factor"){
+      print("Inferred Discrete BN from first variable. param.learning.method has been set to mle")
+    } else {
+      stop("Could not infer distribution of nodes. Did you input valid variables? (numeric or factor)")
+    }
+  }
   if (is.null(x) && class(y) != "pp.forBN"){
     DCBN <- buildDynamicCBNnoG(y = y,
                                structure.learning.algorithm = structure.learning.algorithm,
