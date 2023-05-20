@@ -1,7 +1,7 @@
 # BNWeatherGen
 ## Weather Generators with Bayesian Networks.
 
-Implements Bayesian networks as discrete multivariate weather generators in [R](https://www.r-project.org). A small tutorial with several examples is provided in the [companion notebook](https://github.com/MNLR/BNWeatherGen/blob/master/2019_BNWeatherGen_WRR.ipynb).
+Implements Bayesian networks as discrete and Gaussian multivariate weather generators in [R](https://www.r-project.org). A small tutorial with several examples is provided in the [companion notebook](https://github.com/MNLR/BNWeatherGen/blob/master/2019_BNWeatherGen_WRR.ipynb).
 
 This is a novel methodology in the multisite stochastic weather generation game, which we proposed and thoroughly analyzed in the article [*Multisite Weather Generators using Bayesian Networks: An illustrative case study for precipitation occurrence*](https://doi.org/10.1029/2019WR026416), published in **Water Resources Research**. It also has some experimental functionality not restricted to weather generators, like predictive networks for downscaling purposes.
 
